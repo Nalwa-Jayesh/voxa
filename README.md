@@ -29,7 +29,7 @@ An advanced voice-controlled assistant using Google's Gemini API. This project p
 1. Clone the repository:
 ```bash
 git clone https://github.com/Nalwa-Jayesh/voxa.git
-cd llm-voice-agent
+cd voxa
 ```
 
 2. Create and activate a virtual environment:
@@ -115,7 +115,7 @@ Note: The assistant uses natural language processing, so you can phrase these co
 ## Project Structure 📁
 
 ```
-llm-voice-agent/
+voxa/
 ├── voice_assistant/           # Main package directory
 │   ├── __init__.py           # Package initialization
 │   ├── main.py               # Main entry point and CLI interface
