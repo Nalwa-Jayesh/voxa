@@ -134,13 +134,9 @@ voxa/
 │   └── utils/                # Utility functions
 │       ├── config.py         # Configuration management
 │       └── helpers.py        # Helper functions
-├── data/                     # Data storage directory
-│   └── tasks.json           # Persistent task storage
-├── .venv/                    # Virtual environment directory
-├── .gitignore               # Git ignore rules
+├── assistant_state.pkl       # Persistent state storage (tasks, conversation history)
 ├── requirements.txt         # Project dependencies
 ├── setup.py                 # Package configuration
-├── voice_assistant.log      # Application log file
 └── README.md                # Project documentation
 ```
 
@@ -150,7 +146,8 @@ Each component serves a specific purpose:
 - **core/**: Contains the main assistant logic, state management, and task handling systems
 - **llm/**: Manages interactions with Google's Gemini API and prompt engineering
 - **utils/**: Provides helper functions and configuration management
-- **data/**: Stores persistent data like tasks and user preferences
+- **data/**: Directory for additional data storage
+- **assistant_state.pkl**: Stores persistent state including tasks, conversation history, and user preferences
 - **main.py**: Entry point that ties all components together and provides the CLI interface
 
 ## Development 👨‍💻
